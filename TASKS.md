@@ -10,15 +10,6 @@ This file tracks all work for the ShopSmart e-commerce analytics dashboard, base
 
 ## To Do
 
-### TASK-5: Category and region breakdowns
-Add the category and region bar charts (corresponds to PRD milestone M5, FR-3, FR-4).
-
-- [ ] Category bar chart shows all 5 categories, sorted by sales value
-- [ ] Region bar chart shows all 4 regions, sorted by sales value
-- [ ] Both charts have interactive tooltips with exact values
-
-Commit:
-
 ### TASK-6: Testing and refinement
 Verify the dashboard meets all acceptance criteria and polish for presentation (corresponds to PRD milestone M6).
 
@@ -38,6 +29,15 @@ Deploy the dashboard so it's publicly accessible via a shareable URL (correspond
 Commit:
 
 ## In Progress
+
+### TASK-5: Category and region breakdowns
+Add the category and region bar charts (corresponds to PRD milestone M5, FR-3, FR-4).
+
+- [ ] Category bar chart shows all 5 categories, sorted by sales value
+- [ ] Region bar chart shows all 4 regions, sorted by sales value
+- [ ] Both charts have interactive tooltips with exact values
+
+Commit:
 
 ## Done
 
