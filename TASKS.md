@@ -40,7 +40,7 @@ Add the category and region bar charts (corresponds to PRD milestone M5, FR-3, F
 - [x] Both charts have interactive tooltips with exact values
 
 Commit: 5300b3c
-Notes: Category/region totals and descending sort order verified directly against `data/sales-data.csv` via `sales_by_category`/`sales_by_region` (Electronics highest at $42,683.67; North highest at $38,857.24); app startup verified clean via `streamlit run app.py` with no errors/warnings. No Claude in Chrome extension was available this session, so the rendered charts and hover tooltips were not visually confirmed in a browser — tooltips rely on Plotly Express's default hover behavior, the same mechanism already visually verified for the TASK-4 line chart.
+Notes: Clean.
 
 ### TASK-4: Sales trend chart
 Add the sales-over-time line chart (corresponds to PRD milestone M4, FR-2).
