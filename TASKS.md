@@ -10,15 +10,6 @@ This file tracks all work for the ShopSmart e-commerce analytics dashboard, base
 
 ## To Do
 
-### TASK-6: Testing and refinement
-Verify the dashboard meets all acceptance criteria and polish for presentation (corresponds to PRD milestone M6).
-
-- [ ] All values match expected calculations from the CSV
-- [ ] Dashboard runs without errors or warnings and loads within 5 seconds
-- [ ] Layout and labels are clear and suitable for an executive presentation
-
-Commit:
-
 ### TASK-7: Deployment to Streamlit Community Cloud
 Deploy the dashboard so it's publicly accessible via a shareable URL (corresponds to PRD milestone M7, NFR-5).
 
@@ -31,6 +22,16 @@ Commit:
 ## In Progress
 
 ## Done
+
+### TASK-6: Testing and refinement
+Verify the dashboard meets all acceptance criteria and polish for presentation (corresponds to PRD milestone M6).
+
+- [x] All values match expected calculations from the CSV
+- [x] Dashboard runs without errors or warnings and loads within 5 seconds
+- [x] Layout and labels are clear and suitable for an executive presentation
+
+Commit: none (verification pass only, no bug found — see TASK-3/4/5 commits)
+Notes: Full pytest suite passes (6/6). Cross-checked KPI/breakdown values against the real `data/sales-data.csv` by calling `sales_calculations.py` functions directly: Total Sales $116,500.21, Total Orders 482, top category Electronics, all four regions present — all match the PRD's Expected Output table. Headless `streamlit run app.py` starts cleanly with no errors, only the standard "install Watchdog for better performance" CLI tip (not an app warning). Layout/labels criterion was verified by reading `app.py` (wide layout, chart titles/axis labels, comma-formatted KPIs) rather than by screenshot — no browser tool was available in this session to visually confirm the rendered page.
 
 ### TASK-5: Category and region breakdowns
 Add the category and region bar charts (corresponds to PRD milestone M5, FR-3, FR-4).
