@@ -10,15 +10,6 @@ This file tracks all work for the ShopSmart e-commerce analytics dashboard, base
 
 ## To Do
 
-### TASK-4: Sales trend chart
-Add the sales-over-time line chart (corresponds to PRD milestone M4, FR-2).
-
-- [ ] Line chart shows sales over time with correct data
-- [ ] Interactive tooltips show exact values
-- [ ] Chart renders within 2 seconds of data load
-
-Commit:
-
 ### TASK-5: Category and region breakdowns
 Add the category and region bar charts (corresponds to PRD milestone M5, FR-3, FR-4).
 
@@ -47,6 +38,15 @@ Deploy the dashboard so it's publicly accessible via a shareable URL (correspond
 Commit:
 
 ## In Progress
+
+### TASK-4: Sales trend chart
+Add the sales-over-time line chart (corresponds to PRD milestone M4, FR-2).
+
+- [ ] Line chart shows sales over time with correct data
+- [ ] Interactive tooltips show exact values
+- [ ] Chart renders within 2 seconds of data load
+
+Commit:
 
 ## Done
 
