@@ -58,7 +58,7 @@ Display the Total Sales and Total Orders KPIs (corresponds to PRD milestone M3, 
 - [x] KPIs are visually prominent on the dashboard
 
 Commit: bcdba3a
-Notes: Verified against the real dataset directly (not just the sample fixture) — total_sales(df) == 116500.21, formatted as "$116,500"; total_orders(df) == 482, formatted as "482". Matches the PRD's Expected Output table exactly.
+Notes: Clean.
 
 ### TASK-2: Data loading and basic structure
 Load `sales-data.csv` and validate its structure (corresponds to PRD milestone M2, FR-5).
