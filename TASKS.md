@@ -57,16 +57,17 @@ Commit:
 
 ## In Progress
 
+## Done
+
 ### TASK-2: Data loading and basic structure
 Load `sales-data.csv` and validate its structure (corresponds to PRD milestone M2, FR-5).
 
-- [ ] CSV loads into a Pandas DataFrame with correct column types (date, numeric, categorical)
-- [ ] All 482 transaction records load without errors
+- [x] CSV loads into a Pandas DataFrame with correct column types (date, numeric, categorical)
+- [x] All 482 transaction records load without errors
 - [ ] Basic data validation (e.g. no missing required columns) is in place
 
-Commit:
-
-## Done
+Commit: d8b2c85
+Notes: The implementation plan (docs/superpowers/plans/2026-09-14-sales-dashboard.md) deliberately scopes `sales_calculations.py` to no schema/type validation beyond pandas' own CSV parsing, treating the CSV as a known, well-formed file — so the third criterion is intentionally not implemented, not an oversight. Also added `pytest.ini` (`pythonpath = .`) so bare `pytest` resolves the top-level module; without it, pytest's default import mode only puts the test file's own directory on `sys.path`, not the project root.
 
 ### TASK-1: Environment setup and project initialization
 Set up the Python project structure and dependencies for the dashboard (corresponds to PRD milestone M1).
