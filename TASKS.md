@@ -30,7 +30,7 @@ Verify the dashboard meets all acceptance criteria and polish for presentation (
 - [x] Dashboard runs without errors or warnings and loads within 5 seconds
 - [x] Layout and labels are clear and suitable for an executive presentation
 
-Commit: (pending — see below)
+Commit: 731b962 (fix); see also 11e2faa (verification pass)
 Notes: Full pytest suite passes (6/6). Cross-checked KPI/breakdown values against the real `data/sales-data.csv` by calling `sales_calculations.py` functions directly: Total Sales $116,500.21, Total Orders 482, top category Electronics, all four regions present — all match the PRD's Expected Output table. Layout/labels criterion was verified by reading `app.py` (wide layout, chart titles/axis labels, comma-formatted KPIs) rather than by screenshot — no browser tool was available in this session to visually confirm the rendered page. Initial verification pass missed a real issue: an early headless run happened to exit before the app script fully executed, so its clean-looking log was a false negative. A later run (started to let the user test the app interactively) showed `use_container_width` deprecation warnings on all three `st.plotly_chart` calls (Streamlit 1.64.0 warns this param is being replaced by `width=`). Fixed by switching to `width="stretch"`; confirmed a subsequent run prints no warnings and pytest still passes 6/6.
 
 ### TASK-5: Category and region breakdowns
