@@ -48,16 +48,17 @@ Commit:
 
 ## In Progress
 
+## Done
+
 ### TASK-3: KPI cards implementation
 Display the Total Sales and Total Orders KPIs (corresponds to PRD milestone M3, FR-1).
 
-- [ ] Total Sales displayed as currency (~$116,500, formatted as $X,XXX,XXX)
-- [ ] Total Orders displayed as a formatted count (482)
-- [ ] KPIs are visually prominent on the dashboard
+- [x] Total Sales displayed as currency (~$116,500, formatted as $X,XXX,XXX)
+- [x] Total Orders displayed as a formatted count (482)
+- [x] KPIs are visually prominent on the dashboard
 
-Commit:
-
-## Done
+Commit: bcdba3a
+Notes: Verified against the real dataset directly (not just the sample fixture) — total_sales(df) == 116500.21, formatted as "$116,500"; total_orders(df) == 482, formatted as "482". Matches the PRD's Expected Output table exactly.
 
 ### TASK-2: Data loading and basic structure
 Load `sales-data.csv` and validate its structure (corresponds to PRD milestone M2, FR-5).
