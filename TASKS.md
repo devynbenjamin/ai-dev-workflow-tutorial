@@ -76,3 +76,4 @@ Set up the Python project structure and dependencies for the dashboard (correspo
 - [x] `streamlit run app.py` launches a blank/placeholder app without errors
 
 Commit: 1d8f749
+Notes: Claude initially overwrote the existing .gitignore (231 lines of curated patterns) with a 3-line file instead of reading it first — caught before committing and reverted; the original already covered venv/, so no .gitignore change was needed for this task.
