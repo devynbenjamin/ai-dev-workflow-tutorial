@@ -10,15 +10,6 @@ This file tracks all work for the ShopSmart e-commerce analytics dashboard, base
 
 ## To Do
 
-### TASK-2: Data loading and basic structure
-Load `sales-data.csv` and validate its structure (corresponds to PRD milestone M2, FR-5).
-
-- [ ] CSV loads into a Pandas DataFrame with correct column types (date, numeric, categorical)
-- [ ] All 482 transaction records load without errors
-- [ ] Basic data validation (e.g. no missing required columns) is in place
-
-Commit:
-
 ### TASK-3: KPI cards implementation
 Display the Total Sales and Total Orders KPIs (corresponds to PRD milestone M3, FR-1).
 
@@ -65,6 +56,15 @@ Deploy the dashboard so it's publicly accessible via a shareable URL (correspond
 Commit:
 
 ## In Progress
+
+### TASK-2: Data loading and basic structure
+Load `sales-data.csv` and validate its structure (corresponds to PRD milestone M2, FR-5).
+
+- [ ] CSV loads into a Pandas DataFrame with correct column types (date, numeric, categorical)
+- [ ] All 482 transaction records load without errors
+- [ ] Basic data validation (e.g. no missing required columns) is in place
+
+Commit:
 
 ## Done
 
