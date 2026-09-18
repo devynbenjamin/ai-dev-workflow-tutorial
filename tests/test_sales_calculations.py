@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from sales_calculations import load_data, total_sales, total_orders
+from sales_calculations import load_data, total_sales, total_orders, monthly_trend
 
 
 def test_load_data_reads_csv_with_parsed_dates(tmp_path):
@@ -40,3 +40,10 @@ def test_total_sales_sums_all_transactions(sample_df):
 
 def test_total_orders_counts_rows(sample_df):
     assert total_orders(sample_df) == 4
+
+
+def test_monthly_trend_groups_by_month_sorted_chronologically(sample_df):
+    result = monthly_trend(sample_df)
+
+    assert list(result["month"]) == ["2024-01", "2024-02"]
+    assert list(result["total_amount"]) == [35.00, 40.00]
