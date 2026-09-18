@@ -1,6 +1,7 @@
 import pandas as pd
+import pytest
 
-from sales_calculations import load_data
+from sales_calculations import load_data, total_sales, total_orders
 
 
 def test_load_data_reads_csv_with_parsed_dates(tmp_path):
@@ -20,3 +21,22 @@ def test_load_data_reads_csv_with_parsed_dates(tmp_path):
         "quantity", "unit_price", "total_amount",
     ]
     assert pd.api.types.is_datetime64_any_dtype(df["date"])
+
+
+@pytest.fixture
+def sample_df():
+    return pd.DataFrame({
+        "date": pd.to_datetime(["2024-01-03", "2024-01-04", "2024-02-01", "2024-02-02"]),
+        "order_id": ["ORD-001", "ORD-002", "ORD-003", "ORD-004"],
+        "category": ["Electronics", "Accessories", "Electronics", "Audio"],
+        "region": ["North", "South", "North", "East"],
+        "total_amount": [20.00, 15.00, 30.00, 10.00],
+    })
+
+
+def test_total_sales_sums_all_transactions(sample_df):
+    assert total_sales(sample_df) == 75.00
+
+
+def test_total_orders_counts_rows(sample_df):
+    assert total_orders(sample_df) == 4
