@@ -10,15 +10,6 @@ This file tracks all work for the ShopSmart e-commerce analytics dashboard, base
 
 ## To Do
 
-### TASK-1: Environment setup and project initialization
-Set up the Python project structure and dependencies for the dashboard (corresponds to PRD milestone M1).
-
-- [ ] Project structure created (e.g. `app.py`, `data/`, `requirements.txt`)
-- [ ] Dependencies (Streamlit, Plotly, Pandas) install cleanly
-- [ ] `streamlit run app.py` launches a blank/placeholder app without errors
-
-Commit:
-
 ### TASK-2: Data loading and basic structure
 Load `sales-data.csv` and validate its structure (corresponds to PRD milestone M2, FR-5).
 
@@ -76,3 +67,12 @@ Commit:
 ## In Progress
 
 ## Done
+
+### TASK-1: Environment setup and project initialization
+Set up the Python project structure and dependencies for the dashboard (corresponds to PRD milestone M1).
+
+- [x] Project structure created (e.g. `app.py`, `data/`, `requirements.txt`)
+- [x] Dependencies (Streamlit, Plotly, Pandas) install cleanly
+- [x] `streamlit run app.py` launches a blank/placeholder app without errors
+
+Commit: 1d8f749
