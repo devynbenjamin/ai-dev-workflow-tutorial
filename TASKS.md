@@ -10,18 +10,20 @@ This file tracks all work for the ShopSmart e-commerce analytics dashboard, base
 
 ## To Do
 
-### TASK-7: Deployment to Streamlit Community Cloud
-Deploy the dashboard so it's publicly accessible via a shareable URL (corresponds to PRD milestone M7, NFR-5).
-
-- [ ] App deployed to Streamlit Community Cloud
-- [ ] Public URL loads the dashboard correctly with no errors
-- [ ] Deployed version matches the locally verified version
-
-Commit:
-
 ## In Progress
 
 ## Done
+
+### TASK-7: Deployment to Streamlit Community Cloud
+Deploy the dashboard so it's publicly accessible via a shareable URL (corresponds to PRD milestone M7, NFR-5).
+
+- [x] App deployed to Streamlit Community Cloud
+- [x] Public URL loads the dashboard correctly with no errors
+- [x] Deployed version matches the locally verified version
+
+Live URL: https://ai-dev-workflow-tutorial-q5peseasee3x39ysmhcny9.streamlit.app
+Commit: 1d3dc0a (main, deployed from this merge)
+Notes: Deployed to Streamlit Community Cloud from main after the feature/sales-dashboard merge.
 
 ### TASK-6: Testing and refinement
 Verify the dashboard meets all acceptance criteria and polish for presentation (corresponds to PRD milestone M6).
