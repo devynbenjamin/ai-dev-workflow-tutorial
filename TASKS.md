@@ -39,16 +39,17 @@ Commit:
 
 ## In Progress
 
+## Done
+
 ### TASK-4: Sales trend chart
 Add the sales-over-time line chart (corresponds to PRD milestone M4, FR-2).
 
-- [ ] Line chart shows sales over time with correct data
-- [ ] Interactive tooltips show exact values
-- [ ] Chart renders within 2 seconds of data load
+- [x] Line chart shows sales over time with correct data
+- [x] Interactive tooltips show exact values
+- [x] Chart renders within 2 seconds of data load
 
-Commit:
-
-## Done
+Commit: ce97866
+Notes: Clean.
 
 ### TASK-3: KPI cards implementation
 Display the Total Sales and Total Orders KPIs (corresponds to PRD milestone M3, FR-1).
