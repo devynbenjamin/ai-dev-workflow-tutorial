@@ -10,15 +10,6 @@ This file tracks all work for the ShopSmart e-commerce analytics dashboard, base
 
 ## To Do
 
-### TASK-3: KPI cards implementation
-Display the Total Sales and Total Orders KPIs (corresponds to PRD milestone M3, FR-1).
-
-- [ ] Total Sales displayed as currency (~$116,500, formatted as $X,XXX,XXX)
-- [ ] Total Orders displayed as a formatted count (482)
-- [ ] KPIs are visually prominent on the dashboard
-
-Commit:
-
 ### TASK-4: Sales trend chart
 Add the sales-over-time line chart (corresponds to PRD milestone M4, FR-2).
 
@@ -56,6 +47,15 @@ Deploy the dashboard so it's publicly accessible via a shareable URL (correspond
 Commit:
 
 ## In Progress
+
+### TASK-3: KPI cards implementation
+Display the Total Sales and Total Orders KPIs (corresponds to PRD milestone M3, FR-1).
+
+- [ ] Total Sales displayed as currency (~$116,500, formatted as $X,XXX,XXX)
+- [ ] Total Orders displayed as a formatted count (482)
+- [ ] KPIs are visually prominent on the dashboard
+
+Commit:
 
 ## Done
 
